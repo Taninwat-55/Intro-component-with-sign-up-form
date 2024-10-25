@@ -135,5 +135,24 @@ body {
   font-size: 0.75rem;
   position: right;
   font-style: italic;
-  /* display: none; */
+}
+
+@media (max-width: 475px) {
+  .container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-container {
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .register-container {
+    width: 100%;
+    width: auto;
+    height: auto;
+  }
 }
