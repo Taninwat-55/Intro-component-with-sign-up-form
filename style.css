@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', serif;
+}
+
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-darkBlue: hsl(249, 10%, 26%);
+  --neutral-grayishBlue: hsl(246, 25%, 77%);
+  --fontSize: 1rem;
+}
+
+body {
+  background-color: var(--primary-red);
+  background-image: url(./images/bg-intro-desktop.png);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 100px;
+  gap: 30px;
+}
+
+.text-container {
+  height: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.text-container h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.text-container p {
+  color: white;
+  font-size: var(--fontSize);
+}
+
+.register-container {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promotion {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--accent-blue);
+  border-radius: 10px;
+  color: white;
+}
+
+.form-card {
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input {
+  border: 1px solid var(--neutral-grayishBlue);
+  border-radius: 10px;
+  height: 60px;
+  font-weight: 700;
+}
+
+.text-input {
+  padding: 20px;
+}
+
+.free-trial-btn {
+  color: white;
+  background-color: var(--primary-green);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 50px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: medium;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.free-trial-btn:active {
+  opacity: 0.75;
+}
+
+.form-card p:last-child {
+  color: var(--neutral-grayishBlue);
+  font-size: small;
+  text-align: center;
+}
+
+.form-card p:last-child span {
+  color: var(--primary-red);
+  font-weight: 600;
+}
+
+.form input.error-message {
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border: 1.5px solid var(--primary-red);
+}
+
+.errorMessage {
+  color: var(--primary-red);
+  font-size: 0.75rem;
+  position: right;
+  font-style: italic;
+  /* display: none; */
+}
